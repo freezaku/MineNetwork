@@ -57,12 +57,32 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.87" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F8s-mF-vwu">
-                                <frame key="frameInset" minX="127" minY="248" width="120" height="120"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="f5M-Hc-z9d">
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IN2-J6-A8y">
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.87" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EZ5-oq-mjq">
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.87" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wdK-t0-lEF">
+                                        <color key="backgroundColor" red="0.0" green="0.56862745098039214" blue="0.91764705882352937" alpha="0.87" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
+                                        <state key="normal" title="Sign In">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F8s-mF-vwu">
                                 <color key="backgroundColor" red="0.15294117647058825" green="0.23137254901960785" blue="0.47058823529411764" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="120" id="0oI-t9-Wq7"/>
-                                    <constraint firstAttribute="height" constant="120" id="xhe-mc-v68"/>
+                                    <constraint firstAttribute="width" constant="100" id="0oI-t9-Wq7"/>
+                                    <constraint firstAttribute="height" constant="100" id="xhe-mc-v68"/>
                                 </constraints>
                                 <state key="normal" image="f"/>
                             </button>
@@ -71,12 +91,16 @@
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="QVa-g2-Phr" secondAttribute="trailing" id="4v7-xH-MWu"/>
                             <constraint firstItem="YRU-Yk-SaX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="AGN-2l-eCe"/>
-                            <constraint firstItem="F8s-mF-vwu" firstAttribute="top" secondItem="0Bv-Bn-t6G" secondAttribute="bottom" constant="8" id="DjD-X2-yY1"/>
+                            <constraint firstItem="F8s-mF-vwu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="AQs-Ug-sHN"/>
+                            <constraint firstItem="F8s-mF-vwu" firstAttribute="top" secondItem="0Bv-Bn-t6G" secondAttribute="bottom" constant="20" id="DjD-X2-yY1"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="f5M-Hc-z9d" secondAttribute="trailing" constant="30" id="Duz-bj-F2e"/>
+                            <constraint firstItem="f5M-Hc-z9d" firstAttribute="top" secondItem="F8s-mF-vwu" secondAttribute="bottom" constant="40" id="LYW-iF-I84"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="QVa-g2-Phr" secondAttribute="bottom" id="VDJ-Fy-sjd"/>
                             <constraint firstItem="YRU-Yk-SaX" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Xj5-n0-RmU"/>
                             <constraint firstItem="0Bv-Bn-t6G" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Y72-nG-uOV"/>
                             <constraint firstItem="0Bv-Bn-t6G" firstAttribute="top" secondItem="YRU-Yk-SaX" secondAttribute="bottom" constant="20" id="Yyf-wx-fyJ"/>
                             <constraint firstAttribute="trailing" secondItem="YRU-Yk-SaX" secondAttribute="trailing" id="gSH-kb-5AJ"/>
+                            <constraint firstItem="f5M-Hc-z9d" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="30" id="hfh-NP-D4u"/>
                             <constraint firstItem="QVa-g2-Phr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="hj0-0G-jUY"/>
                             <constraint firstItem="0Bv-Bn-t6G" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="whu-qe-uO4"/>
                         </constraints>
