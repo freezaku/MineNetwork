@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		342204DC1E0C64F50054D465 /* RountBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342204DB1E0C64F50054D465 /* RountBtn.swift */; };
+		342204DE1E0C66450054D465 /* FancyField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342204DD1E0C66450054D465 /* FancyField.swift */; };
+		342204E01E0C67500054D465 /* FancyBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342204DF1E0C67500054D465 /* FancyBtn.swift */; };
 		34B2C0F71E0BAC0500AA5570 /* FancyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B2C0F61E0BAC0500AA5570 /* FancyView.swift */; };
 		34B2C0FA1E0BAC9800AA5570 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B2C0F91E0BAC9800AA5570 /* Constants.swift */; };
 		34FDE1541E0B308C0093A6CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FDE1531E0B308C0093A6CA /* AppDelegate.swift */; };
@@ -19,6 +22,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		342204DB1E0C64F50054D465 /* RountBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RountBtn.swift; sourceTree = "<group>"; };
+		342204DD1E0C66450054D465 /* FancyField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyField.swift; sourceTree = "<group>"; };
+		342204DF1E0C67500054D465 /* FancyBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyBtn.swift; sourceTree = "<group>"; };
 		34B2C0F61E0BAC0500AA5570 /* FancyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyView.swift; sourceTree = "<group>"; };
 		34B2C0F91E0BAC9800AA5570 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		34FDE1501E0B308C0093A6CA /* MineNetwork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MineNetwork.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -108,6 +114,9 @@
 			isa = PBXGroup;
 			children = (
 				34B2C0F61E0BAC0500AA5570 /* FancyView.swift */,
+				342204DB1E0C64F50054D465 /* RountBtn.swift */,
+				342204DD1E0C66450054D465 /* FancyField.swift */,
+				342204DF1E0C67500054D465 /* FancyBtn.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -254,10 +263,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				342204DE1E0C66450054D465 /* FancyField.swift in Sources */,
 				34FDE1561E0B308C0093A6CA /* SignInVC.swift in Sources */,
 				34FDE1541E0B308C0093A6CA /* AppDelegate.swift in Sources */,
+				342204DC1E0C64F50054D465 /* RountBtn.swift in Sources */,
 				34B2C0F71E0BAC0500AA5570 /* FancyView.swift in Sources */,
 				34B2C0FA1E0BAC9800AA5570 /* Constants.swift in Sources */,
+				342204E01E0C67500054D465 /* FancyBtn.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

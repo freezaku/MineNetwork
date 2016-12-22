@@ -1,15 +1,15 @@
 //
-//  FancyView.swift
+//  RountBtn.swift
 //  MineNetwork
 //
-//  Created by 徐鸿力 on 16/12/21.
+//  Created by 徐鸿力 on 16/12/22.
 //  Copyright © 2016年 Honglix Xu. All rights reserved.
 //
 
 import UIKit
 
-class FancyView: UIView {
-    
+class RountBtn: UIButton {
+
     override func awakeFromNib() {
         super.awakeFromNib()
         
@@ -17,6 +17,14 @@ class FancyView: UIView {
         layer.shadowOpacity = 0.8
         layer.shadowRadius = 5.0
         layer.shadowOffset = CGSize(width: 1.0, height: 1.0)
-        
+        imageView?.contentMode = .scaleAspectFit
+
     }
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        
+        layer.cornerRadius = self.frame.width / 2
+    }
+    
 }
