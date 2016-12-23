@@ -67,7 +67,7 @@
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EZ5-oq-mjq" customClass="FancyField" customModule="MineNetwork" customModuleProvider="target">
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.87" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wdK-t0-lEF" customClass="FancyBtn" customModule="MineNetwork" customModuleProvider="target">
                                         <color key="backgroundColor" red="0.0" green="0.56862745098039214" blue="0.91764705882352937" alpha="0.87" colorSpace="calibratedRGB"/>
@@ -75,6 +75,9 @@
                                         <state key="normal" title="Sign In">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="signInTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="STw-RD-eS0"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -86,7 +89,7 @@
                                 </constraints>
                                 <state key="normal" image="f"/>
                                 <connections>
-                                    <action selector="facebookBtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="04C-Aq-WVe"/>
+                                    <action selector="facebookBtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Thk-mw-5zY"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -108,6 +111,10 @@
                             <constraint firstItem="0Bv-Bn-t6G" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="whu-qe-uO4"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailField" destination="IN2-J6-A8y" id="T5S-fd-qhF"/>
+                        <outlet property="pwdField" destination="EZ5-oq-mjq" id="1Zo-kp-Ros"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
