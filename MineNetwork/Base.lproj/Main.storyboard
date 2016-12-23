@@ -114,30 +114,45 @@
                     <connections>
                         <outlet property="emailField" destination="IN2-J6-A8y" id="T5S-fd-qhF"/>
                         <outlet property="pwdField" destination="EZ5-oq-mjq" id="1Zo-kp-Ros"/>
-                        <segue destination="rsb-hC-Wql" kind="show" identifier="goToFeed" id="R8R-cJ-BK5"/>
+                        <segue destination="284-xU-WCv" kind="show" identifier="goToFeed" id="lTY-K6-Vtq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="117.59999999999999" y="122.78860569715144"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="mDl-An-G8c">
+        <!--FeedVC-->
+        <scene sceneID="5GH-Wp-p00">
             <objects>
-                <viewController id="rsb-hC-Wql" sceneMemberID="viewController">
+                <viewController id="284-xU-WCv" customClass="FeedVC" customModule="MineNetwork" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Xdp-IG-xv8"/>
-                        <viewControllerLayoutGuide type="bottom" id="eNB-oF-adP"/>
+                        <viewControllerLayoutGuide type="top" id="c1n-Mw-obI"/>
+                        <viewControllerLayoutGuide type="bottom" id="0ws-bj-1ih"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="i8h-Cs-zC1" customClass="FeedVC" customModule="MineNetwork" customModuleProvider="target">
+                    <view key="view" contentMode="scaleToFill" id="4d7-G3-cFG">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.53212596859575889" green="1" blue="0.68121348761535461" alpha="1" colorSpace="calibratedRGB"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RjZ-Vf-RES">
+                                <frame key="frameInset" minX="146" minY="298" width="82" height="71"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Sign Out">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="signInTapped:" destination="284-xU-WCv" eventType="touchUpInside" id="Qte-tq-Kwm"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="goToSignIn" id="Ph0-GU-BqX"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="0uf-1P-rpd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AI4-29-wiO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="817" y="123"/>
+            <point key="canvasLocation" x="888.79999999999995" y="122.78860569715144"/>
         </scene>
     </scenes>
     <resources>

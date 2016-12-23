@@ -21,7 +21,12 @@ class SignInVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        
         if let _ = KeychainWrapper.standard.string(forKey: KEY_UID) {
+            print("JESS: ID found in keyChain")
             performSegue(withIdentifier: "goToFeed", sender: nil)
         }
     }
