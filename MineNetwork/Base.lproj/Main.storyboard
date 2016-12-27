@@ -135,11 +135,15 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xl9-EZ-mwI" customClass="FancyView" customModule="MineNetwork" customModuleProvider="target">
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sign-out" translatesAutoresizingMaskIntoConstraints="NO" id="4Zs-ZD-PLa">
+                                    <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sign_out4" translatesAutoresizingMaskIntoConstraints="NO" id="4Zs-ZD-PLa">
+                                        <gestureRecognizers/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="34" id="dER-nC-PeX"/>
                                             <constraint firstAttribute="width" constant="42" id="yle-Hp-lRZ"/>
                                         </constraints>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="Pao-Xs-ESf" appends="YES" id="pTB-tH-koT"/>
+                                        </connections>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Feed" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qL7-N7-sJR">
                                         <constraints>
@@ -202,7 +206,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="353"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="kSF-74-DFt" id="Ocd-gR-KLl">
-                                            <frame key="frameInset" width="375" height="352"/>
+                                            <frame key="frameInset" width="375" height="352.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VVq-vZ-M93" customClass="FancyView" customModule="MineNetwork" customModuleProvider="target">
@@ -307,6 +311,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AI4-29-wiO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Pao-Xs-ESf">
+                    <connections>
+                        <action selector="signInTapped:" destination="284-xU-WCv" id="AzL-ev-Faq"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="887.20000000000005" y="121.88905547226388"/>
         </scene>
@@ -317,7 +326,7 @@
         <image name="empty-heart" width="70" height="70"/>
         <image name="f" width="352" height="328"/>
         <image name="profile1" width="153" height="204"/>
-        <image name="sign-out" width="92" height="65"/>
+        <image name="sign_out4" width="256" height="256"/>
         <image name="usc" width="4518" height="2078"/>
         <image name="usc_night" width="600" height="350"/>
     </resources>
