@@ -165,7 +165,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="WkR-Po-poh">
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add_image1" translatesAutoresizingMaskIntoConstraints="NO" id="21j-ef-322" customClass="CircleView" customModule="MineNetwork" customModuleProvider="target">
-                                                <color key="backgroundColor" red="0.72549019607843135" green="0.96470588235294119" blue="0.792156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="0.0" green="0.56862745098039214" blue="0.91764705882352937" alpha="0.87" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="49" id="cki-EZ-bMy"/>
                                                     <constraint firstAttribute="height" constant="49" id="zPs-Fa-27H"/>
@@ -198,7 +198,7 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="353" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="iuB-dX-LmN">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="353" id="kSF-74-DFt">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PostCell" rowHeight="353" id="kSF-74-DFt" customClass="PostCell" customModule="MineNetwork" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="353"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="kSF-74-DFt" id="Ocd-gR-KLl">
@@ -222,7 +222,7 @@
                                                                             <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
-                                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="empty-heart" translatesAutoresizingMaskIntoConstraints="NO" id="DZM-Op-5Yt" customClass="CircleView" customModule="MineNetwork" customModuleProvider="target">
+                                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="empty-heart" translatesAutoresizingMaskIntoConstraints="NO" id="DZM-Op-5Yt">
                                                                             <constraints>
                                                                                 <constraint firstAttribute="height" constant="60" id="BhF-Zd-67d"/>
                                                                                 <constraint firstAttribute="width" constant="60" id="loy-no-lv2"/>
@@ -233,23 +233,23 @@
                                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="usc" translatesAutoresizingMaskIntoConstraints="NO" id="P2k-Qy-TXz"/>
                                                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="f5j-wh-r5Y">
                                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="9Zd-RZ-WhH"/>
+                                                                    </constraints>
                                                                     <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                                 </textView>
                                                             </subviews>
                                                         </stackView>
-                                                        <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="z1G-2O-6Ee">
-                                                            <frame key="frameInset" minX="260" minY="313" width="83" height="24"/>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="z1G-2O-6Ee">
                                                             <subviews>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Likes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t78-cI-dBo">
-                                                                    <frame key="frameInset" width="39" height="24"/>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Likes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t78-cI-dBo">
                                                                     <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
                                                                     <nil key="textColor"/>
                                                                     <color key="highlightedColor" red="0.0" green="0.0" blue="0.0" alpha="0.54000000000000004" colorSpace="calibratedRGB"/>
                                                                 </label>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Likes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ChL-ce-tlS">
-                                                                    <frame key="frameInset" minX="44" width="39" height="24"/>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Likes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ChL-ce-tlS">
                                                                     <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
                                                                     <nil key="textColor"/>
                                                                     <color key="highlightedColor" red="0.0" green="0.0" blue="0.0" alpha="0.54000000000000004" colorSpace="calibratedRGB"/>
@@ -262,11 +262,13 @@
                                                         <constraint firstItem="Mik-ry-BJe" firstAttribute="leading" secondItem="VVq-vZ-M93" secondAttribute="leading" constant="8" id="4lK-ev-3jI"/>
                                                         <constraint firstItem="Mik-ry-BJe" firstAttribute="top" secondItem="VVq-vZ-M93" secondAttribute="top" constant="8" id="RSu-53-olH"/>
                                                         <constraint firstAttribute="bottom" secondItem="Mik-ry-BJe" secondAttribute="bottom" constant="40" id="XwE-ZK-mj4"/>
+                                                        <constraint firstAttribute="trailing" secondItem="z1G-2O-6Ee" secondAttribute="trailing" constant="10" id="egZ-fc-xF4"/>
                                                         <constraint firstAttribute="trailing" secondItem="Mik-ry-BJe" secondAttribute="trailing" constant="8" id="h7V-KZ-N2S"/>
                                                         <constraint firstItem="z1G-2O-6Ee" firstAttribute="top" secondItem="Mik-ry-BJe" secondAttribute="bottom" constant="8" id="pOp-k5-lMm"/>
                                                     </constraints>
                                                 </view>
                                             </subviews>
+                                            <color key="backgroundColor" red="0.81176470590000005" green="0.84705882349999995" blue="0.86274509799999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <constraints>
                                                 <constraint firstItem="VVq-vZ-M93" firstAttribute="leading" secondItem="Ocd-gR-KLl" secondAttribute="leading" constant="16" id="I1A-F3-dqm"/>
                                                 <constraint firstAttribute="bottom" secondItem="VVq-vZ-M93" secondAttribute="bottom" constant="8" id="JdP-al-Cr1"/>
@@ -274,6 +276,13 @@
                                                 <constraint firstItem="VVq-vZ-M93" firstAttribute="top" secondItem="Ocd-gR-KLl" secondAttribute="top" constant="8" id="kAa-Sh-1av"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="caption" destination="f5j-wh-r5Y" id="aLM-2a-jCq"/>
+                                            <outlet property="likesLbl" destination="ChL-ce-tlS" id="ZKY-8l-FEy"/>
+                                            <outlet property="postImg" destination="P2k-Qy-TXz" id="B8u-rF-lpi"/>
+                                            <outlet property="profileImg" destination="6TE-cQ-nZz" id="jDS-qZ-xln"/>
+                                            <outlet property="usernameLbl" destination="afE-AB-EKk" id="4Dj-IS-F0O"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -281,7 +290,7 @@
                         <color key="backgroundColor" red="0.81176470590000005" green="0.84705882349999995" blue="0.86274509799999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="zVT-Ih-grc" secondAttribute="trailing" constant="16" id="6c1-c5-Au2"/>
-                            <constraint firstItem="iuB-dX-LmN" firstAttribute="top" secondItem="zVT-Ih-grc" secondAttribute="bottom" constant="16" id="9AH-HL-I8k"/>
+                            <constraint firstItem="iuB-dX-LmN" firstAttribute="top" secondItem="zVT-Ih-grc" secondAttribute="bottom" constant="8" id="9AH-HL-I8k"/>
                             <constraint firstItem="zVT-Ih-grc" firstAttribute="top" secondItem="xl9-EZ-mwI" secondAttribute="bottom" constant="16" id="Kp6-NK-Mas"/>
                             <constraint firstAttribute="trailing" secondItem="xl9-EZ-mwI" secondAttribute="trailing" id="M3b-fU-S0B"/>
                             <constraint firstAttribute="trailing" secondItem="iuB-dX-LmN" secondAttribute="trailing" id="O13-89-pMJ"/>
@@ -293,6 +302,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="tableView" destination="iuB-dX-LmN" id="jwK-rA-GGV"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="goToSignIn" id="Ph0-GU-BqX"/>
                     </connections>
                 </viewController>
