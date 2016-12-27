@@ -195,6 +195,9 @@
                                                     <constraint firstAttribute="height" constant="49" id="x6d-Iv-jaT"/>
                                                 </constraints>
                                                 <state key="normal" title="Button" image="add_post1"/>
+                                                <connections>
+                                                    <action selector="postBtnTapped:" destination="284-xU-WCv" eventType="touchUpInside" id="zit-Ld-aiW"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -215,7 +218,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="353"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="kSF-74-DFt" id="Ocd-gR-KLl">
-                                            <frame key="frameInset" width="375" height="352"/>
+                                            <frame key="frameInset" width="375" height="352.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VVq-vZ-M93" customClass="FancyView" customModule="MineNetwork" customModuleProvider="target">
@@ -316,6 +319,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="captionField" destination="t70-3a-sWn" id="8Pg-T6-dZf"/>
                         <outlet property="imageAdd" destination="21j-ef-322" id="HFa-Hl-dfb"/>
                         <outlet property="tableView" destination="iuB-dX-LmN" id="jwK-rA-GGV"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="goToSignIn" id="Ph0-GU-BqX"/>
