@@ -27,7 +27,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" red="0.89803921568627454" green="0.95686274509803915" blue="0.95294117647058818" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.27058823529411763" green="0.70196078431372544" blue="0.46274509803921571" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="75" id="03N-8x-wja"/>
                                     <constraint firstItem="3l2-Oj-qqJ" firstAttribute="top" secondItem="QVa-g2-Phr" secondAttribute="top" constant="8" id="OFD-Ag-Lls"/>
@@ -70,7 +70,7 @@
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wdK-t0-lEF" customClass="FancyBtn" customModule="MineNetwork" customModuleProvider="target">
-                                        <color key="backgroundColor" red="0.0" green="0.56862745098039214" blue="0.91764705882352937" alpha="0.87" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.23529411764705882" green="0.50980392156862742" blue="0.71372549019607845" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
                                         <state key="normal" title="Sign In">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -155,7 +155,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" red="0.72549019607843135" green="0.96470588235294119" blue="0.792156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.58823529411764708" green="0.38823529411764707" blue="0.71764705882352942" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="qL7-N7-sJR" firstAttribute="centerY" secondItem="xl9-EZ-mwI" secondAttribute="centerY" id="66Q-rG-Jz1"/>
                                     <constraint firstAttribute="height" constant="65" id="Po0-6b-O1b"/>
