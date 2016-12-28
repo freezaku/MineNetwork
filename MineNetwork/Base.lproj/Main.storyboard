@@ -218,7 +218,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="353"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="kSF-74-DFt" id="Ocd-gR-KLl">
-                                            <frame key="frameInset" width="375" height="352.5"/>
+                                            <frame key="frameInset" width="375" height="352"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VVq-vZ-M93" customClass="FancyView" customModule="MineNetwork" customModuleProvider="target">
@@ -295,6 +295,7 @@
                                         <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         <connections>
                                             <outlet property="caption" destination="f5j-wh-r5Y" id="aLM-2a-jCq"/>
+                                            <outlet property="likeImg" destination="DZM-Op-5Yt" id="S9X-lL-pDF"/>
                                             <outlet property="likesLbl" destination="ChL-ce-tlS" id="ZKY-8l-FEy"/>
                                             <outlet property="postImg" destination="P2k-Qy-TXz" id="B8u-rF-lpi"/>
                                             <outlet property="profileImg" destination="6TE-cQ-nZz" id="jDS-qZ-xln"/>
