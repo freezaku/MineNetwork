@@ -140,5 +140,10 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
         performSegue(withIdentifier: "goToSignIn", sender: nil)
         
     }
+    
+    
+    @IBAction func weatherTapped(_ sender: AnyObject) {
+        performSegue(withIdentifier: "goToWeather", sender: nil)
+    }
 
 }
