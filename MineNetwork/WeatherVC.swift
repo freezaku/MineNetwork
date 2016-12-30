@@ -24,6 +24,11 @@ class WeatherVC: UIViewController, UITableViewDelegate, UITableViewDataSource, C
     
     @IBOutlet weak var tableView: UITableView!
     
+    @IBAction func backToFeedTapped(_ sender: AnyObject) {
+        performSegue(withIdentifier: "backToFeed", sender: nil)
+    }
+    
+    
     let locationManager = CLLocationManager()
     var currentLocation: CLLocation!
     

@@ -148,17 +148,19 @@
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MineNetwork" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qL7-N7-sJR">
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="30" id="4hI-vL-wrM"/>
-                                            <constraint firstAttribute="width" constant="160" id="bjn-KL-VXB"/>
+                                            <constraint firstAttribute="height" constant="50" id="4hI-vL-wrM"/>
+                                            <constraint firstAttribute="width" constant="200" id="bjn-KL-VXB"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="24"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="31"/>
                                         <color key="textColor" red="0.014985844492912292" green="0.98983842134475708" blue="0.059392102062702179" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JBu-DS-BIJ">
-                                        <frame key="frameInset" minX="300" minY="90" width="58" height="40"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Weather">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JBu-DS-BIJ">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="49" id="SAm-p4-Yne"/>
+                                            <constraint firstAttribute="width" constant="42" id="rQZ-DS-yTA"/>
+                                        </constraints>
+                                        <state key="normal" title="Weather" image="go_to_weather1">
                                             <color key="titleColor" red="0.038391754031181335" green="0.95423644781112671" blue="0.02992129884660244" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
@@ -170,6 +172,7 @@
                                 <color key="backgroundColor" red="0.58823529411764708" green="0.38823529411764707" blue="0.71764705882352942" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="4Zs-ZD-PLa" firstAttribute="leading" secondItem="xl9-EZ-mwI" secondAttribute="leading" constant="8" id="93q-QY-MGP"/>
+                                    <constraint firstAttribute="trailing" secondItem="JBu-DS-BIJ" secondAttribute="trailing" constant="8" id="9Br-LG-PIb"/>
                                     <constraint firstItem="RBo-Mz-mJn" firstAttribute="top" secondItem="xl9-EZ-mwI" secondAttribute="top" id="9hu-1L-Lf5"/>
                                     <constraint firstAttribute="bottom" secondItem="RBo-Mz-mJn" secondAttribute="bottom" id="Loo-8q-Grk"/>
                                     <constraint firstItem="qL7-N7-sJR" firstAttribute="centerX" secondItem="xl9-EZ-mwI" secondAttribute="centerX" id="P2N-Ml-R9U"/>
@@ -177,6 +180,7 @@
                                     <constraint firstItem="qL7-N7-sJR" firstAttribute="centerY" secondItem="xl9-EZ-mwI" secondAttribute="centerY" id="RIa-H0-vNX"/>
                                     <constraint firstItem="RBo-Mz-mJn" firstAttribute="leading" secondItem="xl9-EZ-mwI" secondAttribute="leading" id="W6T-jW-kzh"/>
                                     <constraint firstAttribute="trailing" secondItem="RBo-Mz-mJn" secondAttribute="trailing" id="aEx-o1-tRG"/>
+                                    <constraint firstItem="JBu-DS-BIJ" firstAttribute="centerY" secondItem="xl9-EZ-mwI" secondAttribute="centerY" id="tKj-kA-hpD"/>
                                     <constraint firstItem="4Zs-ZD-PLa" firstAttribute="centerY" secondItem="xl9-EZ-mwI" secondAttribute="centerY" id="uNH-AJ-S1e"/>
                                 </constraints>
                             </view>
@@ -349,7 +353,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="887.20000000000005" y="121.88905547226388"/>
+            <point key="canvasLocation" x="886.5" y="121.5"/>
         </scene>
         <!--WeatherVC-->
         <scene sceneID="aVl-pl-DYt">
@@ -399,17 +403,26 @@
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ac-bg-b2u">
+                                        <frame key="frameInset" minX="8" minY="19" width="34" height="31"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button" image="back_icon3"/>
+                                        <connections>
+                                            <action selector="backToFeedTapped:" destination="ctF-dm-KXI" eventType="touchUpInside" id="Krz-GW-s6i"/>
+                                            <segue destination="284-xU-WCv" kind="show" identifier="backToFeed" id="EXU-hJ-Svp"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.31764705882352939" green="0.61176470588235299" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="neI-aL-uaf" firstAttribute="centerX" secondItem="M4n-Ae-MYo" secondAttribute="centerX" id="2xa-fJ-1td"/>
-                                    <constraint firstItem="jzf-q8-tM3" firstAttribute="top" secondItem="X3r-Ry-TF6" secondAttribute="top" constant="20" id="8BP-pX-ZDq"/>
+                                    <constraint firstItem="jzf-q8-tM3" firstAttribute="top" secondItem="X3r-Ry-TF6" secondAttribute="top" constant="40" id="8BP-pX-ZDq"/>
                                     <constraint firstItem="jzf-q8-tM3" firstAttribute="leading" secondItem="X3r-Ry-TF6" secondAttribute="leading" constant="20" id="KUa-AE-ksh"/>
                                     <constraint firstAttribute="height" constant="300" id="OAY-EI-W9C"/>
                                     <constraint firstAttribute="trailing" secondItem="M4n-Ae-MYo" secondAttribute="trailing" constant="20" id="Yw6-pk-LBQ"/>
                                     <constraint firstAttribute="bottom" secondItem="jzf-q8-tM3" secondAttribute="bottom" constant="20" id="adr-yw-7OS"/>
                                     <constraint firstAttribute="bottom" secondItem="neI-aL-uaf" secondAttribute="bottom" constant="20" id="hcE-nY-Gy4"/>
-                                    <constraint firstItem="M4n-Ae-MYo" firstAttribute="top" secondItem="X3r-Ry-TF6" secondAttribute="top" constant="50" id="iRf-4C-sQJ"/>
+                                    <constraint firstItem="M4n-Ae-MYo" firstAttribute="top" secondItem="X3r-Ry-TF6" secondAttribute="top" constant="70" id="iRf-4C-sQJ"/>
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="91" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="He4-VA-4Wh">
@@ -508,7 +521,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="njG-rR-AZk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1607.2" y="125.4872563718141"/>
+            <point key="canvasLocation" x="1648.8" y="122.78860569715144"/>
         </scene>
     </scenes>
     <resources>
@@ -516,10 +529,15 @@
         <image name="add_image1" width="512" height="512"/>
         <image name="add_post1" width="300" height="300"/>
         <image name="back_icon1" width="512" height="512"/>
+        <image name="back_icon3" width="128" height="128"/>
         <image name="empty-heart" width="70" height="70"/>
         <image name="f" width="352" height="328"/>
+        <image name="go_to_weather1" width="128" height="128"/>
         <image name="profile1" width="153" height="204"/>
         <image name="usc" width="4518" height="2078"/>
         <image name="usc_night" width="600" height="350"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="EXU-hJ-Svp"/>
+    </inferredMetricsTieBreakers>
 </document>
